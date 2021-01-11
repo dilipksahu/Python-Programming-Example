@@ -22,3 +22,15 @@ def Bubble_Sort(tup):
     return tup 
 
 print(Bubble_Sort(test_input))
+
+
+print('\n===== Using sort() =========')
+def usingsort(tup):
+    # reverse = None (Sorts in Ascending order)  
+    # key is set to sort using second element of  
+    # sublist lambda has been used 
+    # tup.sort(key= lambda x: x[1])
+    tup = sorted(tup, key=lambda x : x[1])
+    return tup
+
+print(usingsort(test_input))
